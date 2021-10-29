@@ -1,26 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">	
+	
+	<!-- <link href="https://vjs.zencdn.net/7.2/video-js.min.css" rel="stylesheet"> -->
+	<!-- <script src="https://vjs.zencdn.net/7.2/video.min.js"></script> -->
+
+	<link rel="stylesheet" href="css/video-js.css">
+	<script src="js/video.js"></script>
+	
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+	<link rel="stylesheet" href="css/estilos.css">
+	<title>Video.js</title>
 </head>
 <body>
-  <script src="https://jwpsrv.com/library/FfMxTl3oEeSEiiIACxmInQ.js"></script>   
-       <div id="aRzklaXf">Loading the player...</div>
-       <script type="text/javascript">
-       var playerInstance = jwplayer("aRzklaXf");
-       playerInstance.setup({
-        "file": "https://us-b4-p-e-ft6.cdn.mdstrm.com/live-stream/609b243156cca108312822a6/publish/media_600.m3u8?aid=5fea09a071a9945deebf5f7c&uid=en5wjUHuF6u0UqgSewqy3NIdcrdj1d5k&sid=AFumaBIKlre83VIbxVQ3rHTQLciukmCj&pid=pZSoE8ASRksVlPMCui4cdWu4q6khplEn&ref=https%3A%2F%2Fwww.tvazteca.com%2F&without_cookies=false&dnt=true&es=us-b4-p-e-ft6.cdn.mdstrm.com&ote=1635205499277&ot=wJ7zBRglrk9huRoM6QZeOQ&proto=https&pz=usaid=5fea09a071a9945deebf5f7c&uid=en5wjUHuF6u0UqgSewqy3NIdcrdj1d5k&sid=AFumaBIKlre83VIbxVQ3rHTQLciukmCj&pid=xB3mOOKGzngALgbchGWLIS0UZCi6BK8h&ref=https%3A%2F%2Fwww.tvazteca.com%2F&without_cookies=false&dnt=true&es=us-b5-p-e-wo1.cdn.mdstrm.com&ote=1635205309919&ot=_Q0Z9l4_5ZcggBHiru74cA&proto=https&pz=us",
-        "height":"560",
-        "width":"50%",
-        stretching: "bestfit",
-        "image": "#",
-        "mediaid": "player",
-        "mute": false,
-        "autostart": false,
-            "cast": {
-                "appid": "player",
-                "logo": "https://i.ibb.co/Tgk2YrC/Logo.png",
-            },
-       });
-    </script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+	<!--<header>
+		<h1 class="titulo">Subunime</h1>
+	</header>-->
+
+	<main>
+		<div class="contenedor">
+			<video class="fm-video video-js vjs-16-9 vjs-big-play-centered" data-setup="{}" controls id="fm-video">
+				<source src="https://hj.henaojara.com/player/go_player.php?v=aHR0cHM6Ly91cWxvYWQuY29tL2VtYmVkLXhtYXI5ZDN5ODRzYy5odG1s" type="video/mp4">
+			</video>
+	
+		</div>
+	</main>
+
+	<script>
+		var reproductor = videojs('fm-video', {
+			fluid: true
+		});
+	</script>
 </body>
+</html>
